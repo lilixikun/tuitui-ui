@@ -25,6 +25,7 @@ body {
     background: #f8f8f8;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    height: 100%;;
 }
 
 /* 页面蒙版 */
