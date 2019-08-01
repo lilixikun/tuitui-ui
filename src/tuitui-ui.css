@@ -25,3 +25,5 @@
 @import './menu.css';
 /* 模态框 */
 @import './modal.css';
+/* loading组件 */
+@import './loading.css';
