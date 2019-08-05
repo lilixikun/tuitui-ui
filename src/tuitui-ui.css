@@ -27,3 +27,5 @@
 @import './modal.css';
 /* loading组件 */
 @import './loading.css';
+/* Toast弹出提示组件 */
+@import './toast.css';
