@@ -29,3 +29,5 @@
 @import './loading.css';
 /* Toast弹出提示组件 */
 @import './toast.css';
+/* 操作提升组件 */
+@import './action-sheet.css';
