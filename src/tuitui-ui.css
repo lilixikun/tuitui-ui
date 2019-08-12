@@ -31,3 +31,5 @@
 @import './toast.css';
 /* 操作提升组件 */
 @import './action-sheet.css';
+/* 文章组件 */
+@import './article.css';
