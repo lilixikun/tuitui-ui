@@ -1,7 +1,15 @@
-/* 字体图标，依赖font-awesome */
-/* @import '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css'; */
+/*
+ * @Author: kun.xi 
+ * @Date: 2019-08-14 18:05:33 
+ * @Last Modified by:   xikun 
+ * @Last Modified time: 2019-08-14 18:05:33 
+ */
 
-@import '../cdn/icon.css';
+
+/* 字体图标，依赖font-awesome */
+@import '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* @import '../cdn/icon.css'; */
 
 /* 垂直方向上振动 */
 .fa-vibrate-y {
