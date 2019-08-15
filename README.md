@@ -1,5 +1,5 @@
 # tuitui-ui
- 自定义前端UI样式库
+自定义前端UI样式库
 
 ## Node.js+ Npm +Npx
 #### Npx是执行Node.js插件的工具，它可以执行npm包中包含的命名
