@@ -17,6 +17,11 @@
     user-select: none;
 }
 
+.tt-btn:active {
+    position: relative;
+    top: .1rem;
+}
+
 /* 定制主操作按钮样式 */
 .tt-btn.tt-btn-primary {
     background-color: #1AAD19;
