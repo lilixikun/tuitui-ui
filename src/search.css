@@ -2,13 +2,14 @@
  * @Author: mikey.zhaopeng 
  * @Date: 2019-07-22 16:38:44 
  * @Last Modified by: xikun
- * @Last Modified time: 2019-07-22 17:43:55
+ * @Last Modified time: 2019-08-26 16:06:18
  */
 
 .tt-search {
     max-width: 640px;
     margin: 0 auto;
     background: #f8f8f8;
+    z-index: 110;
 }
 
 /* 搜索状态中，覆盖内容区 */
