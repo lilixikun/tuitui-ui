@@ -33,3 +33,5 @@
 @import './action-sheet.css';
 /* 文章组件 */
 @import './article.css';
+/* Accordion组件 */
+@import './accordion.css'

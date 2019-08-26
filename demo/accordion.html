@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/tuitui-ui.css">
+    <title>Accordion</title>
+</head>
+
+<body>
+    <div class="tt-accordion">
+        <div class="tt-accordion-header">
+            Layout
+            <i class="fa fa-chevron-down tt-accordion-icon"></i>
+        </div>
+        <div class="tt-list">
+            <div class="tt-accordion-item">
+                老妈给个方法
+            </div>
+            <div class="tt-accordion-item">
+                老妈给个方法
+            </div>
+            <div class="tt-accordion-item">
+                老妈给个方法
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var domAccordion = document.querySelector('.tt-accordion-header');
+        domAccordion.onclick = (e) => {
+
+            if (domAccordion.classList.contains("tt-accordion-header-active")) {
+                domAccordion.classList.remove("tt-accordion-header-active");
+                document.querySelector(".tt-accordion-icon").classList.replace("fa-chevron-up", "fa-chevron-down");
+            } else {
+                domAccordion.classList.add("tt-accordion-header-active");
+                document.querySelector(".tt-accordion-icon").classList.replace("fa-chevron-down", "fa-chevron-up");
+            }
+        }
+    </script>
+</body>
+
+</html>
