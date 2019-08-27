@@ -86,91 +86,80 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./demo/accordion.js":
-/*!***************************!*\
-  !*** ./demo/accordion.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("var domAccordion = document.querySelector('.tt-accordion-header');\r\ndomAccordion.onclick = (e) => {\r\n\r\n    if (domAccordion.classList.contains(\"tt-accordion-header-active\")) {\r\n        domAccordion.classList.remove(\"tt-accordion-header-active\");\r\n        document.querySelector(\".tt-accordion-icon\").classList.replace(\"fa-chevron-up\", \"fa-chevron-down\");\r\n    } else {\r\n        domAccordion.classList.add(\"tt-accordion-header-active\");\r\n        document.querySelector(\".tt-accordion-icon\").classList.replace(\"fa-chevron-down\", \"fa-chevron-up\");\r\n    }\r\n}\n\n//# sourceURL=webpack:///./demo/accordion.js?");
-
-/***/ }),
-
-/***/ "./demo/action-sheet.js":
+/***/ "./demo/js/accordion.js":
 /*!******************************!*\
-  !*** ./demo/action-sheet.js ***!
+  !*** ./demo/js/accordion.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("window.onload = function () {\r\n    // 弹出菜单\r\n    document.querySelector('#js-show').onclick = (e) => {\r\n        document.querySelector('.tt-action-sheet').classList.add('show');\r\n    }\r\n    // 收回菜单\r\n    document.querySelector('#js-close').onclick = (e) => {\r\n        document.querySelector('.tt-action-sheet').classList.remove('show');\r\n    }\r\n}\n\n//# sourceURL=webpack:///./demo/action-sheet.js?");
+eval("var domAccordion = document.querySelector('.tt-accordion-header');\r\nif (domAccordion != undefined) {\r\n    domAccordion.onclick = (e) => {\r\n\r\n        if (domAccordion.classList.contains(\"tt-accordion-header-active\")) {\r\n            domAccordion.classList.remove(\"tt-accordion-header-active\");\r\n            document.querySelector(\".tt-accordion-icon\").classList.replace(\"fa-chevron-up\", \"fa-chevron-down\");\r\n        } else {\r\n            domAccordion.classList.add(\"tt-accordion-header-active\");\r\n            document.querySelector(\".tt-accordion-icon\").classList.replace(\"fa-chevron-down\", \"fa-chevron-up\");\r\n        }\r\n    }\r\n}\n\n//# sourceURL=webpack:///./demo/js/accordion.js?");
 
 /***/ }),
 
-/***/ "./demo/article.js":
-/*!*************************!*\
-  !*** ./demo/article.js ***!
-  \*************************/
+/***/ "./demo/js/action-sheet.js":
+/*!*********************************!*\
+  !*** ./demo/js/action-sheet.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// 展开文章\r\ndocument.querySelector('.tt-article-unfold-btn').onclick = (e) => {\r\n    document.querySelector('.tt-article').classList.remove('fold');\r\n}\n\n//# sourceURL=webpack:///./demo/article.js?");
+eval("// 弹出菜单\r\nif (document.querySelector('#js-show')) {\r\n    document.querySelector('#js-show').onclick = (e) => {\r\n        document.querySelector('.tt-action-sheet').classList.add('show');\r\n    }\r\n}\r\n\r\n// 收回菜单\r\nif (document.querySelector('#js-close')) {\r\n    document.querySelector('#js-close').onclick = (e) => {\r\n        document.querySelector('.tt-action-sheet').classList.remove('show');\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./demo/js/action-sheet.js?");
 
 /***/ }),
 
-/***/ "./demo/index.js":
-/*!***********************!*\
-  !*** ./demo/index.js ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ./modal.js */ \"./demo/modal.js\");\r\n__webpack_require__(/*! ./accordion.js */ \"./demo/accordion.js\")\n\n//# sourceURL=webpack:///./demo/index.js?");
-
-/***/ }),
-
-/***/ "./demo/modal.js":
-/*!***********************!*\
-  !*** ./demo/modal.js ***!
-  \***********************/
+/***/ "./demo/js/article.js":
+/*!****************************!*\
+  !*** ./demo/js/article.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.querySelector(\".tt-btn-primary\").onclick = (e) => {\r\n    document.querySelector(\"#confirm\").classList.add(\"show\")\r\n}\r\n\r\ndocument.querySelector(\".tt-btn-warning\").onclick = (e) => {\r\n    document.querySelector(\"#modal\").classList.add(\"show\")\r\n}\r\n\r\ndocument.querySelector(\".tt-close\").onclick = (e) => {\r\n    document.querySelector(\"#confirm\").classList.remove(\"show\")\r\n}\r\ndocument.querySelector(\".tt-modal-close\").onclick = (e) => {\r\n    document.querySelector(\"#modal\").classList.remove(\"show\")\r\n}\n\n//# sourceURL=webpack:///./demo/modal.js?");
+eval("// 展开文章\r\nvar domArticle = document.querySelector('.tt-article-unfold-btn');\r\nif (domArticle != undefined) {\r\n    domArticle.onclick = (e) => {\r\n        document.querySelector('.tt-article').classList.remove('fold');\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./demo/js/article.js?");
 
 /***/ }),
 
-/***/ "./demo/navbar.js":
-/*!************************!*\
-  !*** ./demo/navbar.js ***!
-  \************************/
+/***/ "./demo/js/modal.js":
+/*!**************************!*\
+  !*** ./demo/js/modal.js ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var li = document.querySelectorAll('.tt-navbar .navbar-item');\r\nfor (var i = 0; i < li.length; i++)\r\n    li[i].onclick = function () {\r\n        for (var i = 0; i < li.length; i++) {\r\n            li[i].classList.remove(\"active\");\r\n            this.classList.add('active');\r\n        }\r\n    }\r\n\n\n//# sourceURL=webpack:///./demo/navbar.js?");
+eval("if (document.querySelector(\".tt-btn-primary\")) {\r\n    document.querySelector(\".tt-btn-primary\").onclick = (e) => {\r\n        document.querySelector(\"#confirm\").classList.add(\"show\")\r\n    }\r\n}\r\n\r\nif (document.querySelector(\".tt-btn-warning\")) {\r\n    document.querySelector(\".tt-btn-warning\").onclick = (e) => {\r\n        document.querySelector(\"#modal\").classList.add(\"show\")\r\n    }\r\n}\r\n\r\nif (document.querySelector(\".tt-close\")) {\r\n    document.querySelector(\".tt-close\").onclick = (e) => {\r\n        document.querySelector(\"#confirm\").classList.remove(\"show\")\r\n    }\r\n}\r\n\r\nif (document.querySelector(\".tt-modal-close\")) {\r\n    document.querySelector(\".tt-modal-close\").onclick = (e) => {\r\n        document.querySelector(\"#modal\").classList.remove(\"show\")\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./demo/js/modal.js?");
 
 /***/ }),
 
-/***/ "./demo/toast.js":
-/*!***********************!*\
-  !*** ./demo/toast.js ***!
-  \***********************/
+/***/ "./demo/js/navbar.js":
+/*!***************************!*\
+  !*** ./demo/js/navbar.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// 显示加载中的Toast\r\ndocument.querySelector('#js-show-toast-loading').onclick = (e) => {\r\n    let toastEle = document.querySelector('#js-toast-loading');\r\n    toastEle.classList.add('show');\r\n    setTimeout(() => {\r\n        toastEle.classList.remove('show');\r\n    }, 2e3);\r\n};\r\n// 显示操作成功的Toast\r\ndocument.querySelector('#js-show-toast-success').onclick = (e) => {\r\n    let toastEle = document.querySelector('#js-toast-success');\r\n    toastEle.classList.add('show');\r\n    setTimeout(() => {\r\n        toastEle.classList.remove('show');\r\n    }, 2e3);\r\n};\n\n//# sourceURL=webpack:///./demo/toast.js?");
+eval("var li = document.querySelectorAll('.tt-navbar .navbar-item');\r\nfor (var i = 0; i < li.length; i++)\r\n    li[i].onclick = function () {\r\n        for (var i = 0; i < li.length; i++) {\r\n            li[i].classList.remove(\"active\");\r\n            this.classList.add('active');\r\n        }\r\n    }\r\n\n\n//# sourceURL=webpack:///./demo/js/navbar.js?");
+
+/***/ }),
+
+/***/ "./demo/js/toast.js":
+/*!**************************!*\
+  !*** ./demo/js/toast.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// 显示加载中的Toast\r\nif (document.querySelector('#js-show-toast-loading')) {\r\n    document.querySelector('#js-show-toast-loading').onclick = (e) => {\r\n        let toastEle = document.querySelector('#js-toast-loading');\r\n        toastEle.classList.add('show');\r\n        setTimeout(() => {\r\n            toastEle.classList.remove('show');\r\n        }, 2e3);\r\n    };\r\n}\r\n\r\n// 显示操作成功的Toast\r\nif (document.querySelector('#js-show-toast-success')) {\r\n    document.querySelector('#js-show-toast-success').onclick = (e) => {\r\n        let toastEle = document.querySelector('#js-toast-success');\r\n        toastEle.classList.add('show');\r\n        setTimeout(() => {\r\n            toastEle.classList.remove('show');\r\n        }, 2e3);\r\n    };\r\n}\r\n\n\n//# sourceURL=webpack:///./demo/js/toast.js?");
 
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************************!*\
-  !*** multi ./demo/accordion.js ./demo/action-sheet.js ./demo/article.js ./demo/index.js ./demo/modal.js ./demo/navbar.js ./demo/toast.js ***!
-  \*******************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** multi ./demo/js/accordion.js ./demo/js/action-sheet.js ./demo/js/article.js ./demo/js/modal.js ./demo/js/navbar.js ./demo/js/toast.js ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./demo/accordion.js */\"./demo/accordion.js\");\n__webpack_require__(/*! ./demo/action-sheet.js */\"./demo/action-sheet.js\");\n__webpack_require__(/*! ./demo/article.js */\"./demo/article.js\");\n__webpack_require__(/*! ./demo/index.js */\"./demo/index.js\");\n__webpack_require__(/*! ./demo/modal.js */\"./demo/modal.js\");\n__webpack_require__(/*! ./demo/navbar.js */\"./demo/navbar.js\");\nmodule.exports = __webpack_require__(/*! ./demo/toast.js */\"./demo/toast.js\");\n\n\n//# sourceURL=webpack:///multi_./demo/accordion.js_./demo/action-sheet.js_./demo/article.js_./demo/index.js_./demo/modal.js_./demo/navbar.js_./demo/toast.js?");
+eval("__webpack_require__(/*! ./demo/js/accordion.js */\"./demo/js/accordion.js\");\n__webpack_require__(/*! ./demo/js/action-sheet.js */\"./demo/js/action-sheet.js\");\n__webpack_require__(/*! ./demo/js/article.js */\"./demo/js/article.js\");\n__webpack_require__(/*! ./demo/js/modal.js */\"./demo/js/modal.js\");\n__webpack_require__(/*! ./demo/js/navbar.js */\"./demo/js/navbar.js\");\nmodule.exports = __webpack_require__(/*! ./demo/js/toast.js */\"./demo/js/toast.js\");\n\n\n//# sourceURL=webpack:///multi_./demo/js/accordion.js_./demo/js/action-sheet.js_./demo/js/article.js_./demo/js/modal.js_./demo/js/navbar.js_./demo/js/toast.js?");
 
 /***/ })
 

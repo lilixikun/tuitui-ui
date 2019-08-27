@@ -9,9 +9,10 @@ module.exports = {
     mode: "development", //打包为开发模式
 
     /**
-    * 也可以 "./demo/accordion",   "./demo/action-sheet.js" 引用多个js
+     * 方式一
+     * entry:["./demo/accordion",   "./demo/action-sheet.js"]
     */
-    entry: glob.sync('./demo/*.js'),
+    entry: glob.sync('./demo/js/*.js'),
     output: {
         //输出路径和文件名，使用path模块resolve方法将输出路径解析为绝对路径
         path: path.resolve(__dirname, "./dist"), //将js文件打包到dist/js的目录
