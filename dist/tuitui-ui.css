@@ -89,7 +89,7 @@ audio, video {
     border-bottom: 1px solid #ddd;
     background: #f8f8f8;
 }/* 左侧功能区 */.tt-header>.left {
-    flex-basis: 3rem;
+    flex-basis: 4rem;
     text-align: center;
     flex-shrink: 0;
 }/* 中间标题部分 */.tt-header>.title {
@@ -738,4 +738,37 @@ audio, video {
 }/* 文章图片 */.tt-article .tt-article-img {
     max-width: 100%;
     margin: auto;
+}/* Accordion组件 *//*
+ * @Author: kun.xi 
+ * @Date: 2019-08-26 17:28:23 
+ * @Last Modified by: xikun
+ * @Last Modified time: 2019-08-26 18:44:23
+ */.tt-accordion {
+    position: relative;
+    margin-bottom: 1rem;
+    background: #fff;
+}/* title部分 */.tt-accordion .tt-accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.2rem;
+}/* 显示展开的图标 */.tt-accordion .tt-accordion-header>.tt-accordion-icon {
+    color: #ccc;
+    font-size: 1rem;
+}.tt-accordion .tt-accordion-header+.tt-list {
+    transition: height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}.tt-accordion .tt-accordion-header-active+.tt-list {
+    max-height: 100%;
+}/* 展开的item */.tt-accordion .tt-list .tt-accordion-item {
+    margin: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+}/* 展开时候清除的 item 距离tile的距离 避免间距太多*/.tt-accordion .tt-accordion-header-active+.tt-list .tt-accordion-item:first-child {
+    margin-top: 0;
 }

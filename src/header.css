@@ -16,7 +16,7 @@
 
 /* 左侧功能区 */
 .tt-header>.left {
-    flex-basis: 3rem;
+    flex-basis: 4rem;
     text-align: center;
     flex-shrink: 0;
 }

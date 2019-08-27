@@ -26,26 +26,7 @@
         <p class="tt-toast-info">操作成功</p>
     </div>
 
-    <script>
-        window.onload = function () {
-            // 显示加载中的Toast
-            document.querySelector('#js-show-toast-loading').onclick = (e) => {
-                let toastEle = document.querySelector('#js-toast-loading');
-                toastEle.classList.add('show');
-                setTimeout(() => {
-                    toastEle.classList.remove('show');
-                }, 2e3);
-            };
-            // 显示操作成功的Toast
-            document.querySelector('#js-show-toast-success').onclick = (e) => {
-                let toastEle = document.querySelector('#js-toast-success');
-                toastEle.classList.add('show');
-                setTimeout(() => {
-                    toastEle.classList.remove('show');
-                }, 2e3);
-            };
-        }
-    </script>
+    <script src="./toast.js"></script>
 </body>
 
 </html>

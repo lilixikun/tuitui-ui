@@ -33,23 +33,24 @@
         </a>
     </div>
     <div class="tt-content">
-        <p>内容区</p>
+        <a class="tt-btn tt-btn-primary">confirm</a>
+        <a class="tt-btn tt-btn-warning">modal</a>
     </div>
     <!-- 模态框 -->
-    <!-- <div class="tt-modal show">
+    <div class="tt-modal" id="confirm">
         <div class="tt-mask"></div>
         <div class="tt-modal-wrap">
             <div class="tt-modal-body">
                 <p>您的会员即将到期，请及时续费，以免影响您的权益。</p>
             </div>
             <div class="tt-modal-footer">
-                <a class="tt-btn">下次再说</a>
+                <a class="tt-btn tt-close">下次再说</a>
                 <a class="tt-btn">立即续费</a>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <div class="tt-modal show">
+    <div class="tt-modal" id="modal">
         <div class="tt-mask"></div>
         <div class="tt-modal-wrap">
             <div class="tt-modal-body no-padding">
@@ -58,6 +59,9 @@
             <i class="fa fa-close tt-modal-close"></i>
         </div>
     </div>
+
+    <script src="./modal.js"></script>
+
 </body>
 
 </html>
