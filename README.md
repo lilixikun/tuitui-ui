@@ -1,10 +1,12 @@
 
 ## 变更记录
+0.1.3
+- 【Add】增加展开组件Accordion组件
+- 【Add】增加webpack打包js
+
 0.1.2
 - 【Add】Panel组件的标题部分添加“查看更多”这种引导链接的样式。
 - 【Bug Fix】Search 组件指定 z-index，解决和有定位元素同时使用时的层级错乱问题。
-0.1.1
-- 【Initial】初始版本
 
 # tuitui-ui
 自定义前端UI样式库

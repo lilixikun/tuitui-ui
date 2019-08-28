@@ -141,6 +141,17 @@ eval("var li = document.querySelectorAll('.tt-navbar .navbar-item');\r\nfor (var
 
 /***/ }),
 
+/***/ "./demo/js/search.js":
+/*!***************************!*\
+  !*** ./demo/js/search.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("if (document.querySelector(\".tt-search-input\")) {\r\n    document.querySelector(\".tt-search-input\").focus = (e) => {\r\n        document.querySelector(\".tt-search .on-focus\").style.display = \"block\"\r\n    }\r\n}\n\n//# sourceURL=webpack:///./demo/js/search.js?");
+
+/***/ }),
+
 /***/ "./demo/js/toast.js":
 /*!**************************!*\
   !*** ./demo/js/toast.js ***!
@@ -153,13 +164,13 @@ eval("// 显示加载中的Toast\r\nif (document.querySelector('#js-show-toast-l
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************************************************************!*\
-  !*** multi ./demo/js/accordion.js ./demo/js/action-sheet.js ./demo/js/article.js ./demo/js/modal.js ./demo/js/navbar.js ./demo/js/toast.js ***!
-  \*********************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** multi ./demo/js/accordion.js ./demo/js/action-sheet.js ./demo/js/article.js ./demo/js/modal.js ./demo/js/navbar.js ./demo/js/search.js ./demo/js/toast.js ***!
+  \*****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./demo/js/accordion.js */\"./demo/js/accordion.js\");\n__webpack_require__(/*! ./demo/js/action-sheet.js */\"./demo/js/action-sheet.js\");\n__webpack_require__(/*! ./demo/js/article.js */\"./demo/js/article.js\");\n__webpack_require__(/*! ./demo/js/modal.js */\"./demo/js/modal.js\");\n__webpack_require__(/*! ./demo/js/navbar.js */\"./demo/js/navbar.js\");\nmodule.exports = __webpack_require__(/*! ./demo/js/toast.js */\"./demo/js/toast.js\");\n\n\n//# sourceURL=webpack:///multi_./demo/js/accordion.js_./demo/js/action-sheet.js_./demo/js/article.js_./demo/js/modal.js_./demo/js/navbar.js_./demo/js/toast.js?");
+eval("__webpack_require__(/*! ./demo/js/accordion.js */\"./demo/js/accordion.js\");\n__webpack_require__(/*! ./demo/js/action-sheet.js */\"./demo/js/action-sheet.js\");\n__webpack_require__(/*! ./demo/js/article.js */\"./demo/js/article.js\");\n__webpack_require__(/*! ./demo/js/modal.js */\"./demo/js/modal.js\");\n__webpack_require__(/*! ./demo/js/navbar.js */\"./demo/js/navbar.js\");\n__webpack_require__(/*! ./demo/js/search.js */\"./demo/js/search.js\");\nmodule.exports = __webpack_require__(/*! ./demo/js/toast.js */\"./demo/js/toast.js\");\n\n\n//# sourceURL=webpack:///multi_./demo/js/accordion.js_./demo/js/action-sheet.js_./demo/js/article.js_./demo/js/modal.js_./demo/js/navbar.js_./demo/js/search.js_./demo/js/toast.js?");
 
 /***/ })
 
