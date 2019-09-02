@@ -1,6 +1,6 @@
 {
   "name": "tuitui-xkui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "自定义前端UI样式库",
   "main": "index.js",
   "scripts": {
