@@ -2,7 +2,7 @@
  * @Author: kun.xi 
  * @Date: 2019-08-12 13:49:07 
  * @Last Modified by: xikun
- * @Last Modified time: 2019-08-12 14:40:47
+ * @Last Modified time: 2019-09-02 11:58:12
  */
 
 /* 文章组件 */
@@ -70,6 +70,7 @@
 
 /* 文章图片 */
 .tt-article .tt-article-img {
+    display: block;
     max-width: 100%;
     margin: auto;
 }
