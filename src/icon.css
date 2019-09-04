@@ -1,8 +1,8 @@
 /*
  * @Author: kun.xi 
  * @Date: 2019-08-14 18:05:33 
- * @Last Modified by:   xikun 
- * @Last Modified time: 2019-08-14 18:05:33 
+ * @Last Modified by: xikun
+ * @Last Modified time: 2019-09-04 14:32:10
  */
 
 
@@ -14,6 +14,11 @@
 /* 垂直方向上振动 */
 .fa-vibrate-y {
     animation: fa-vibrate-y 1.5s infinite ease-in;
+}
+
+.fa {
+    display: inline-block;
+    text-align: center;
 }
 
 /* 振动轨迹 */
